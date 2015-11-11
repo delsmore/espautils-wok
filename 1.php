@@ -1,8 +1,8 @@
 <?php
 // Create EdinaMetaData table, copy ROSMetaData data into it and add new columns
 // Add DOIs to metadata
-include 'conn.php';
-
+include 'conn.php'; //get remote DB connection details
+//include 'conn-local.php'; //get local DB connection details
 try{
     $dbh = new PDO("sqlsrv:Server=$server;Database=EdinaImports", $username, $password);
 
